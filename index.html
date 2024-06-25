@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suleman - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suleman - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpg"
+              alt="Richard hanrick"
+              width="135px"
+              style="border-radius: 15px"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Suleman Kahlid</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Richard hanrick" width="135px" style="border-radius: 15px;">
-        </figure>
+            <p class="title">Full-Stack JavaScript Developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Suleman Kahlid</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Full-Stack JavaScript Developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:sulemankhlaid128@gmail.com" class="contact-link"
+                  >Sulemankhalid128@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+12133522795" class="contact-link"
+                  >+923044788039</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">linkedin</p>
 
-              <a href="mailto:sulemankhlaid128@gmail.com" class="contact-link">Sulemankhalid128@gmail.com</a>
-            </div>
+                <a
+                  href="https://www.linkedin.com/in/suleman-khalid-b19808164/"
+                  target="_blank"
+                  class="contact-link"
+                  >sulemankhalid</a
+                >
+              </div>
+            </li>
 
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+923044788039</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">linkedin</p>
-
-              <a href="https://www.linkedin.com/in/suleman-khalid-b19808164/" target="_blank" class="contact-link">sulemankhalid</a>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -121,314 +128,346 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <address>Lahore, Pakistan</address>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-              <address>Lahore, Pakistan</address>
-            </div>
-
-          </li>
-
-        </ul>
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              Hello! 👋 I'm Suleman Khalid, a full-stack JavaScript developer
+              from Lahore, Pakistan. With over 5 years of experience, I have a
+              passion for creating digital experiences and specialize in
+              developing robust and dynamic web application solutions using
+              React and Next.js.
+            </p>
+            <p>
+              My toolkit includes expertise in backend development, where I
+              excel using Node.js along with frameworks like Express.js and
+              Nest.js to bring projects to life. I'm also proficient in working
+              with both SQL and NoSQL databases, including PostgreSQL, MongoDB,
+              and MySQL. Whether it's crafting user interfaces or architecting
+              seamless backend systems, I enjoy turning ideas into reality with
+              clean and efficient code.
+            </p>
+            <p>
+              With a strong portfolio, I aim to create solutions that improve
+              user experiences and inspire innovation. Let's work together to
+              build something great! 🚀
+            </p>
+          </section>
 
-        <section class="about-text">
-          <p>
-            Hello! 👋 I'm Suleman Khalid, a full-stack JavaScript developer from Lahore, Pakistan. With over 5 years of experience, I have a passion for creating digital experiences and specialize in developing robust and dynamic web application solutions using React and Next.js.          </p>
-          <p>
-            My toolkit includes expertise in backend development, where I excel using Node.js along with frameworks like Express.js and Nest.js to bring projects to life. I'm also proficient in working with both SQL and NoSQL databases, including PostgreSQL, MongoDB, and MySQL. Whether it's crafting user interfaces or architecting seamless backend systems, I enjoy turning ideas into reality with clean and efficient code.
-          </p>
-          <p>
-            With a strong portfolio, I aim to create solutions that improve user experiences and inspire innovation. Let's work together to build something great! 🚀
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Front-end development</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    Delivering modern, professional and single-page
+                    applications.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Front-end development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Back-end development</h4>
 
-                <p class="service-item-text">
-                  Delivering modern, professional and single-page applications.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    I make scallable custom backends for web and mobile apps.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI Desing</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/web-development.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back-end development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Cloud Support</h4>
 
-                <p class="service-item-text">
-                  I make scallable custom backends for web and mobile apps.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Delivering seamless and scalable cloud support with AWS,
+                    GCP, and Azure.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">UI Desing</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/web-development.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Support</h4>
-
-                <p class="service-item-text">
-                  Delivering seamless and scalable cloud support with AWS, GCP, and Azure.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonial3.jpeg"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 15px"
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonial3.jpeg" alt="Daniel lewis" width="60" data-testimonials-avatar style="border-radius: 15px;">
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Taimoor</h4>
-                <time datetime="2021-06-14" data-modal-testimonials-sub-title>Upwork Client</time>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Great expertise of NestJS! Got the job done perfectly all on their own. Impressive work, highly recommend!
-                  </p>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Taimoor
+                  </h4>
+                  <time datetime="2021-06-14" data-modal-testimonials-sub-title
+                    >Upwork Client</time
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Great expertise of NestJS! Got the job done perfectly all
+                      on their own. Impressive work, highly recommend!
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonal2.jpeg"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 15px"
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonal2.jpeg" alt="Emily evans" width="60" data-testimonials-avatar style="border-radius: 15px;">
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Hamza Ali Khalid</h4>
-                <time datetime="2021-06-14" data-modal-testimonials-sub-title>Founder MoonSys | LetzChat Inc.</time>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Working with Suleman has been a pleasure; he is highly skilled in React and NestJS. His meticulous attention to detail and ability to tackle complex tasks make him a tremendous asset to any project.
-                  </p>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Hamza Ali Khalid
+                  </h4>
+                  <time datetime="2021-06-14" data-modal-testimonials-sub-title
+                    >Founder MoonSys | LetzChat Inc.</time
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Working with Suleman has been a pleasure; he is highly
+                      skilled in React and NestJS. His meticulous attention to
+                      detail and ability to tackle complex tasks make him a
+                      tremendous asset to any project.
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/testimonial1.jpeg"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 15px"
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/testimonial1.jpeg" alt="Jessica miller" width="60" data-testimonials-avatar style="border-radius: 15px;">
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Wajeeh Aslam</h4>
-                <time datetime="2021-06-14" data-modal-testimonials-sub-title>Full Stack Software Engineer | Toptal</time>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I'm here to enthusiastically endorse Suleman for their great achievements and superb work ethic. He has been a crucial part of our team, and our business has benefited much from his commitment and enthusiasm.
-
-                    Suleman constantly produces work of the highest caliber and has a good eye for detail. It is absolutely surprising how well he manages complicated tasks and collaborates with team members.
-                  </p>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Wajeeh Aslam
+                  </h4>
+                  <time datetime="2021-06-14" data-modal-testimonials-sub-title
+                    >Full Stack Software Engineer | Toptal</time
+                  >
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      I'm here to enthusiastically endorse Suleman for their
+                      great achievements and superb work ethic. He has been a
+                      crucial part of our team, and our business has benefited
+                      much from his commitment and enthusiasm. Suleman
+                      constantly produces work of the highest caliber and has a
+                      good eye for detail. It is absolutely surprising how well
+                      he manages complicated tasks and collaborates with team
+                      members.
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-           
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title></h4>
-
-              <time datetime="2021-06-14" data-modal-subTitle></time>
-
-              <div data-modal-text>
-                <p> </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
 
-          </section>
+                <time datetime="2021-06-14" data-modal-subTitle></time>
 
-        </div>
-      </article>
+                <div data-modal-text>
+                  <p></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
 
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <!-- Resume object -->
+          <object
+            data="./assets/Muhammad-Suleman-Khalid-Resume.pdf"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+            style="height: 100vh"
+          >
+            <iframe
+              src="./assets/Muhammad-Suleman-Khalid-Resume.pdf"
+              width="100%"
+              height="100%"
+              style="border: none"
+            >
+              <p>
+                Your browser does not support PDFs.
+                <a href="./assets/Muhammad-Suleman-Khalid-Resume.pdf"
+                  >Download the PDF</a
+                >
+                .
+              </p>
+            </iframe>
+          </object>
 
-
-        <!-- Resume object -->
-        <object
-        data="./assets/Muhammad-Suleman-Khalid-Resume.pdf"
-        type="application/pdf"
-        width="100%"
-        height="100%"
-        style="height: 100vh;"
-      >
-        <iframe
-          src="./assets/Muhammad-Suleman-Khalid-Resume.pdf"
-          width="100%"
-          height="100%"
-          style="border: none;"
-        >
-          <p>
-            Your browser does not support PDFs.
-            <a href="./assets/Muhammad-Suleman-Khalid-Resume.pdf">Download the PDF</a>
-            .
-          </p>
-        </iframe>
-      </object>
-
-         <!-- Experience -->
-         <!-- <section class="timeline">
+          <!-- Experience -->
+          <!-- <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -486,9 +525,9 @@
 
         </section> -->
 
-        <!-- Education -->
+          <!-- Education -->
 
-        <!-- <section class="timeline">
+          <!-- <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -545,330 +584,371 @@
 
         </section>     -->
 
-        <!-- Skills -->
-        <section class="skill">
+          <!-- Skills -->
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-          <h3 class="h3 skills-title">My skills</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Front-end Development</h5>
+                  <data value="90">90%</data>
+                </div>
 
-          <ul class="skills-list content-card">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Back-end development</h5>
+                  <data value="85">85%</data>
+                </div>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Front-end Development</h5>
-                <data value="90">90%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">UI Design</h5>
+                  <data value="70">70%</data>
+                </div>
 
-            </li>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
 
-            <li class="skills-item">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Problem Solving</h5>
+                  <data value="90">90%</data>
+                </div>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Back-end development</h5>
-                <data value="85">85%</data>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">UI Design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Problem Solving</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
             </ul>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Cyber-dive.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Cyber Dive</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/caba-design.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Caba Design</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/intensify.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Intensify</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/realRepp.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">RealRepp</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Buble.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Bubble Health.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/helping.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- Caba Design -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.cabadesign.co/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/caba-design.png"
+                      alt="caba-design"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Caba Design</h3>
+
+                  <p class="project-category">
+                    Building the next generation of home brands powered by
+                    community and technology
+                  </p>
+                </a>
+              </li>
+
+              <!-- RealRepp -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://realrepp.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/realRepp.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">RealRepp ATS</h3>
+
+                  <p class="project-category">
+                    RealREPP provides a full suite of professional staffing &
+                    recruiting services
+                  </p>
+                </a>
+              </li>
+              <!-- Intensify -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.intentsify.io/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/intensify.png"
+                      alt="intentsify"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Intensify</h3>
+
+                  <p class="project-category">
+                    Transform Data Science into Revenue Science.
+                  </p>
+                </a>
+              </li>
+
+              <!-- Bubl Health -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://www.bublhealth.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Buble.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Bubl Health</h3>
+
+                  <p class="project-category">
+                    Bubl Health is an app for patient communities
+                  </p>
+                </a>
+              </li>
+              <!-- College Advisor -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.collegeadvisor.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/college.png"
+                      alt="college"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">College Advisor</h3>
+
+                  <p class="project-category">
+                    Personalized and Effective College Advising
+                  </p>
+                </a>
+              </li>
+              <!-- Broker92 -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.broker92.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Broker92.png"
+                      alt="Broker92"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Broker92</h3>
+
+                  <p class="project-category">
+                    Broker92 was formed with a vision of providing the local
+                    real estate market of Pakistan
+                  </p>
+                </a>
+              </li>
+              <!-- Cyber Dive -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://www.cyberdive.co/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/cyber.png"
+                      alt="Cyber-Dive"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Cyber Dive</h3>
+
+                  <p class="project-category">
+                    Technology changed kids, Parental controls are failing them.
+                  </p>
+                </a>
+              </li>
+
+              <!-- Helping -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://www.helpling.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/helping.png"
+                      alt="helping"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Helping</h3>
+
+                  <p class="project-category">
+                    Find a local cleaner near you with few clicks
+                  </p>
+                </a>
+              </li>
+
+              <!-- SonarRX -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://sonarscripts.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/sonarRX.png"
+                      alt="SonarRX"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">SonarRX</h3>
+
+                  <p class="project-category">
+                    Customized Specialty Drug Coast Management System
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
