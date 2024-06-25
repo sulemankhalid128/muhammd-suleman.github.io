@@ -583,6 +583,10 @@ main {
   scroll-snap-align: center;
 }
 
+.testimonials-item time {
+display: none;
+}
+
 .testimonials-avatar-box {
   position: absolute;
   top: 0;
